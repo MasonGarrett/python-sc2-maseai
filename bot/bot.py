@@ -1,10 +1,17 @@
+import sc2
 from sc2 import BotAI, Race
-
+from sc2.ids.unit_typeid import UnitTypeId
+from sc2.ids.ability_id import AbilityId
+from sc2.id.upgrade_id import UpgradeId
+from sc2.unit import Unit
+from sc2.units import Units
+from sc2.position import Point2
+from sc2.player import Bot, Computer
 
 class CompetitiveBot(BotAI):
-    NAME: str = "CompetitiveBot"
+    NAME: str = "MaseAI"
     """This bot's name"""
-    RACE: Race = Race.Terran
+    RACE: Race = Race.Protoss
     """This bot's Starcraft 2 race.
     Options are:
         Race.Terran
